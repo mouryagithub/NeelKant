@@ -1,0 +1,55 @@
+# Build output
+bin/
+build/
+obj/
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Debug files
+*.dSYM/
+*.pdb
+*.ilk
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Log files
+*.log
+logs/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Test output
+test-results/
+coverage/
+
+# Generated documentation
+docs/_build/

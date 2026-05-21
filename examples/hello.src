@@ -1,0 +1,4 @@
+// Hello World example
+function main(): void {
+    print("Hello, World!");
+}
