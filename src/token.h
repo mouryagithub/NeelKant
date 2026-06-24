@@ -1,0 +1,111 @@
+#pragma once
+#include <string> 
+
+enum class TokenType {
+	//UNSIGNED INTEGERS
+	U8,
+	U16,
+	U32,
+	U64,
+	
+	//SIGNED INTEGERS
+	I8,
+	I16,
+	I32,
+	I64,
+	
+	//FLOATING VALUES
+	F32,
+	F64,
+	
+	//OTHER PRIMITIVE TYPES
+	BOOL,
+	CHAR,
+	STRING,
+	VOID,
+	
+	//IDENTIFIER
+	IDENTIFIER,
+	//LITERALS
+	TRUEVAL,
+	FALSEVAL,
+	NULLVAL,
+	LIT_INT,
+	LIT_FLOAT,
+	LIT_CHAR,
+	LIT_STRING,
+	
+	//CONSTANT
+	CONST,
+	
+	//ARTHEMETIC OPERATORS
+	PLUS,
+	MINUS,
+	STAR,
+	SLASH,
+	PERCENT,
+	INT_DIV,
+	EXPONENT,
+	
+	//BITWISE OPERATORS
+	BIT_OR,
+	BIT_AND,
+	BIT_XOR,
+	BIT_NOT,
+	
+	//LOGICAL OPERATORS
+	AND,
+	OR,
+	
+	//COMPARISION OPERATORS
+	EQ,
+	NEQ,
+	GT,
+	LT,
+	GTEQ,
+	LTEQ,
+	
+	//CONDITIONAL KEYWORDS
+	IF,
+	ELSE,
+	CASE,
+	DEFAULT,
+	
+	//LOOPS
+	FOR,
+	DO,
+	WHILE,
+	
+	//ACCESS MODIFIERS
+	PRI,
+	PRO,
+	PUB,
+	
+	//FUNCTION
+	FN,
+	RETURN,
+	
+	//ASSIGNMENT
+	ASSIGN, // =
+	
+	//PUNCTUATION
+	COLON,
+	SEMICOLON,
+	COMMA,
+	LPAREN,
+	RPAREN,
+	LBRACE,
+	RBRACE,
+	LBRACKET,
+	RBRACKET,
+	
+	END_OF_FILE
+};
+
+struct Token {
+	TokenType type;
+	std::string value;
+	
+	int line;
+	int col;
+};
