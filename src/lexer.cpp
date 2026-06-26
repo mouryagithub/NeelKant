@@ -1,6 +1,7 @@
 #include "lexer.h"
-
+#include <stdexcept>
 using namespace std;
+
 Lexer::Lexer(string source) {
 	src = source;
 	pos = 0;
