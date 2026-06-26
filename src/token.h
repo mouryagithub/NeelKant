@@ -58,6 +58,7 @@ enum class TokenType {
 	//LOGICAL OPERATORS
 	AND,
 	OR,
+	NOT,
 	
 	//COMPARISION OPERATORS
 	EQ,
