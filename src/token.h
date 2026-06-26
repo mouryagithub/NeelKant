@@ -1,6 +1,8 @@
 #pragma once
 #include <string> 
 
+using namespace std;
+
 enum class TokenType {
 	//UNSIGNED INTEGERS
 	U8,
@@ -11,8 +13,8 @@ enum class TokenType {
 	//SIGNED INTEGERS
 	I8,
 	I16,
-	I32,
 	I64,
+	I32,
 	
 	//FLOATING VALUES
 	F32,
@@ -104,7 +106,7 @@ enum class TokenType {
 
 struct Token {
 	TokenType type;
-	std::string value;
+	string value;
 	
 	int line;
 	int col;
