@@ -160,6 +160,9 @@ TokenType Lexer::lookupKeyword(string word) {
 	if(word == "VOID") {
 		return TokenType::VOID;
 	}
+	if(word == "VAR") {
+		return TokenType::VAR;
+	}
 	if(word == "TRUE") {
 		return TokenType::TRUEVAL;
 	}
