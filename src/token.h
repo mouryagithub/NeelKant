@@ -25,6 +25,7 @@ enum class TokenType {
 	CHAR,
 	STRING,
 	VOID,
+	VAR
 	
 	//IDENTIFIER
 	IDENTIFIER,
