@@ -1,0 +1,2 @@
+->Are multiple array decelarations allowed like larce,parse :i32[10];
+->In the language definition docx there is mention of the "var" but no where in the token.h
